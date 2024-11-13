@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS datosyuc;
+USE datosyuc;
+
+CREATE TABLE IF NOT EXISTS destinos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    descripcion TEXT NOT NULL,
+    ubicacion VARCHAR(100) NOT NULL,
+    precio_estimado DECIMAL(10, 2) NOT NULL
+);
+
+INSERT INTO destinos (nombre, descripcion, ubicacion, precio_estimado) VALUES
+('Chichen Itza', 'Uno de los sitios arqueológicos más famosos de Yucatán', 'Yucatán, México', 150.00),
+('Uxmal', 'Antigua ciudad maya con impresionantes pirámides y arquitectura', 'Yucatán, México', 120.00),
+('Celestún', 'Hermosa playa y reserva natural con flamencos rosados', 'Yucatán, México', 100.00);
