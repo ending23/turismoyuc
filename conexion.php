@@ -1,7 +1,7 @@
 <?php 
 // conexion.php
 $host = 'localhost';
-$dbname = 'nombre_base_datos';
+$dbname = 'datosyuc';
 $username = 'usuario';
 $password = 'contraseña';
 
